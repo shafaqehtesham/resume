@@ -1,0 +1,149 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://saqib.azurewebsites.com/}{\Large Muhammad Saqib}} & Email : \href{mailto:saqib.arfeen@gmail.com}{saqib.arfeen@gmail.com}\\
+  \href{http://saqib.azurewebsites.com/}{http://saqib.azurewebsites.com} & Mobile : +92-346-6311199 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National University of Computer and Emerging Sciences-FAST}{Karachi, PK}
+      {Master of Science in Computer Science;  GPA: 3.03/4.0}{Aug. 2012 -- Jun. 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cloud9networks FZE}{Karachi,PK}
+      {Software Engineer}{Jul 2016 - Present}
+      \resumeItemListStart
+        \resumeItem{Trace9}
+          {Trace9 is software stack that is shaped to monitor network devices and customer premesis devices , with data trending visualization, alerting and ticketing system.}
+        \resumeItem{Observer9}
+          {Observer9 is monitoring system for Openstack cloud9. It works in distributed mode and collects, parse and aggregate log data and metrics from openstack cloud nodes. It also has visualization of the data with Grafana and Kibana dashboards.}
+      \resumeItemListEnd
+
+  
+
+    \resumeSubheading
+      {National University of Computer and Emerging Scinces-FAST}{Karachi, PK}
+      {Research and Teaching Assistant}{Jan 2015 - Dec 2015}
+      \resumeItemListStart
+        \resumeItem{Research Assistant - Machine Learning}
+          {Research on machine learning for puzzle solving. Coded a prototype in python and trained it with tensorflow on GPU.http://dx.doi.org/10.14569/IJACSA.2017.080364 }
+        \resumeItem{Teaching Assistant - Theory of Automata}
+          {Involved in marking of class assignments and compilation of grade sheets.It had around 150 students. }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Data Engine}
+      {Data analytics solution capable of streaming data from various sources and store it in hdfs.
+      Built the server side of this project with Spring and front end using Jsp with Angularjs.}
+    \resumeSubItem{Openstack cloud monitoring}
+      {Created a Logging Monitoring and Alerting solution using cutting edge open source tools (ELK).
+      	Processed and transformed ingested log data with logstash and heka and indexed it in elasticsearch 
+      }
+    \resumeSubItem{Sokoban Solver}
+      {Solving sokoban puzzle(an NP-Complete problem) with machine learning.Designed a recurrent neural network and generated data by SAT solver. 
+      }
+    \resumeSubItem{Big data clusters}
+      {Created virtual machine cluster of MPI and bare metal distributed cluster of hadoop mapreduce in HPC lab.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
