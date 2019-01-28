@@ -137,6 +137,8 @@
 {
 \begin{itemize}
 \item{A logs and metrics monitoring system for Openstack cloud. It works in a distributed mode: collects, parses and aggregates  system metrics and log data from all your Openstack cloud. It provides a single dashboard for a comprehensive overview of the health of all your openstack nodes, services and roles.}
+\item{Created a logging monitoring and alerting solution that parses, transforms and aggregates ingested log data with Logstash and Heka and then indexes it in Elasticsearch.
+}.
 \end{itemize}
 }
 \resumeItemListEnd
@@ -148,7 +150,10 @@
 {Research and Teaching Assistant}{Jan 2015 - Dec. 2015}
 \resumeItemListStart
 \resumeItem{Research Assistant - Machine Learning}
-{Research on machine learning for puzzle solving. Coded a prototype with Keras and trained it with GPUs. http://dx.doi.org/10.14569/IJACSA.2017.080364 }
+{
+{Research work on puzzle solving. Copris solver generated the solutions of puzzles in high volume , that served as training data for an RNN model-prototyped with Keras and trained on GPUs.} 
+{\\ \href{http://dx.doi.org/10.14569/IJACSA.2017.080364}{http://dx.doi.org/10.14569/IJACSA.2017.080364} \\ \href{http://bach.istc.kobe-u.ac.jp/copris/docs/intro-en.pdf}{http://bach.istc.kobe-u.ac.jp/copris/docs/intro-en.pdf} }
+}
 \resumeItem{Teaching Assistant - Theory of Automata, Introduction to Algorithms}
 {Class assignments and compilation of final grade sheets. The class strengths were 150 and 100 students respectively.}
 \resumeItemListEnd
@@ -161,13 +166,8 @@
 \resumeSubItem{Data Engine}
 {
 Designed and deployed a multi-node Hadoop cluster, with HIVE, Impala,Oozie, Kafka and Kafka Connect.
-
-Data analytics solution capable of streaming data from various sources and aggregates it HDFS.}
-\resumeSubItem{Openstack cloud monitoring}
-{Created a logging monitoring and alerting solution that parses, transforms and aggregates ingested log data with Logstash and Heka and then indexes it in Elasticsearch.
-}
-\resumeSubItem{Sokoban Solver}
-{A puzzle solver with machine learning. Designed a recurrent neural network and python scripts that generated training data using a SAT solver. 
+Built a streaming system that streamed data with its schema from SQL sources.
+It aggregates the data in HDFS for HIVE queries and BI reports.
 }
 \resumeSubItem{big data clusters}
 {Created virtual machine and bare-metal clusters for MPI and Hadoop map reduce in HPC lab.}
