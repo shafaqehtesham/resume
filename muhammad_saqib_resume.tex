@@ -38,23 +38,23 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+\vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
+\item\small{
+\textbf{#1}{: #2 \vspace{-2pt}}
+}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+\vspace{-1pt}\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -67,34 +67,69 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CV STARTS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://www.linkedin.com/in/mohamedsaqib/}{\Large Muhammad Saqib}} & Email : \href{mailto:saqib.arfeen@gmail.com}{saqib.arfeen@gmail.com}\\
-\href{https://www.linkedin.com/in/mohamedsaqib/}{https://www.linkedin.com/in/mohamedsaqib/} & Mobile : +92 346 6311199 \\
-  \href{https://github.com/saqibarfeen/}{https://github.com/saqibarfeen/}
+\textbf{\href{https://www.linkedin.com/in/mohamedsaqib/}{\Large Muhammad Saqib}} & Email : \href{mailto:saqib.arfeen@gmail.com}{saqib.arfeen@gmail.com}\\
+\href{https://www.linkedin.com/in/mohamedsaqib/}{https://www.linkedin.com/in/mohamedsaqib/} & Phone : +92 346 6311199 \\
+\href{https://github.com/saqibarfeen/}{https://github.com/saqibarfeen/}
 \end{tabular*}
 
 
 %-----------EDUCATION-----------------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {National University of Computer and Emerging Sciences}{2012 -- 2016}
-      {BS Computer Science, CGPA: 3.03/4.0}{}
- 
-  \resumeSubheading
-  {Ayesha Bawany Govt. College}{2010 -- 2012}
-  {Inter Pre-Engineering, 76\% marks}{}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{National University of Computer and Emerging Sciences}{2012 -- 2016}
+{BS Computer Science, CGPA: 3.03/4.0}{}
+
+\resumeSubheading
+{Ayesha Bawany Govt. College}{2010 -- 2012}
+{Inter Pre-Engineering, 76\% marks}{}
+\resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+\resumeSubHeadingListStart
+\item{
+\textbf{Languages}{: Java, Python, JavaScript, , C++, Php, C\#, SQL.}
+}
+\item{
+\textbf{Design frameworks}{: Spring, Express, React, Flask.}
+}
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+
+%--------PROGRAMMING SKILLS------------
+%\section{Coursework}
+%\resumeSubHeadingListStart
+%\item{
+%{Artificial Intelligence},
+%\hfill
+%%{Machine Learning},
+%\hfill
+%{High Performance Computing},
+%\hfill
+%{Computer Graphics},
+%\hfill
+%{Neural Networks.}
+
+%}
+%\resumeSubHeadingListEnd
+
+
 
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
+<<<<<<< Updated upstream
   \resumeSubHeadingListStart
 	
 %	\resumeSubheading
@@ -143,10 +178,47 @@ ranging from Power distributors to core switches.}
   	\item {Troubleshooting of various SaltStack scripts and declarative states in the deployment process.}
   	\item {Providing support to various users of the opensource tool with problems in Openstack platform.}
   \end{itemize}
+=======
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Cloud9 Networks FZE}{Karachi}
+{Sr. Software Engineer}{July 2016 - Present}
+\resumeItemListStart
+\resumeItem{Cloud Monitoring Software}
+{
+\begin{itemize}
+\item {Research and solution design for Openstack private cloud infrastucture and services monitoring.}
+\item {Development of the proposed design that included sandboxed Lua plugins for Heka(github.com/mozilla/heka) and python plugins for collectd for data collection and processing . Elasticsearch , Logstash and Influxdb for data storage and retrieval and Kibana for visualization.}
+\item {Building grok and LPeg patterns for various services of Openstack cloud: for parsing of machine data into fields for fast retrieval and visualization.}
+\item {Security testing and best practices.}
+\item {Built puppet modules and manifests for 1-click deployment.}
+\end{itemize} 
+}
+\resumeItem{Network Monitoring System}
+{
+\begin{itemize}
+\item {Competetor research and analysis of trends in the domain.}
+\item {Implementing solutions with OSS tools and demonstrate them to decision makers.}
+\item {Design,development and intergration of opensource tools and in house built addons for network monitoring: including time series data storage , visualization and reporting.}
+\item {Elasticsearch , Logstash and Kibana for storage/retrieval, parsing, and visualization of syslog data from devices ranging from PDUs to core switches.}
+\item {Supporting deployment engineer and troubleshooting problems in production.}
+
+\end{itemize}
+}
+\resumeItem{\href{https://github.com/pndaproject/}{PNDA Project}}
+{
+\begin{itemize}
+\item {Deployed PNDA Big data network analytics toolchain with Openstack cloud.}
+\item {Troubleshootiing of various SaltStack scripts and declarative states in the deployment process.}
+\item {Providing support to various users of the opensource tool with problems in Openstack platform.}
+\end{itemize}
+>>>>>>> Stashed changes
 }
 
 \resumeItem{Big Data Analytics Engine}
 {
+<<<<<<< Updated upstream
 	\begin{itemize}
 	\item {GUI development with Angularjs framework 1.0.}
 	\item {Writing REST API methods in Java Spring.}
@@ -156,29 +228,49 @@ ranging from Power distributors to core switches.}
 	
 		
 	\end{itemize}
+=======
+\begin{itemize}
+\item {GUI development with Angularjs framework 1.0.}
+\item {Writing REST API methods in Java Spring.}
+\item {Design and deployment of hadoop cluster, and data streaming from JDBC to HIVE.}
+\item {Deduplication of records in HDFS by scheduling Apache Oozie Cron job.}
+
+
+
+\end{itemize}
+>>>>>>> Stashed changes
 }
- \resumeItem{KPK Colleges centralized wifi access system}
+\resumeItem{KPK Govt. colleges centralized Internet access system}
 {
+<<<<<<< Updated upstream
 	\begin{itemize}
 		\item {Analysis, design and implementation of the solution with MERN stack.}
 		\item {Lead the development team.}
 		\item {Using Git for version control and CICD with git hooks.}
 	\end{itemize}
+=======
+\begin{itemize}
+\item {Analysis, design and implementation of the solution with MERN stack.}
+\item {Lead the development team.}
+\item {Using Git for version control and CICD with git hooks.}
+\end{itemize}
+>>>>>>> Stashed changes
 }
-      \resumeItemListEnd
+\resumeItemListEnd
 
-  
 
- %   \resumeSubheading
- %     {FAST-NU}{}
- %     {Research Assistant}{Jan 2015 - Dec 2015}
- %     \resumeItemListStart
- %       \resumeItem{Research Assistant - Machine Learning}
- %         {Research on machine learning for puzzle solving. Coded a prototype in python and trained it with tensorflow with GPU. http://dx.doi.org/10.14569/IJACSA.2017.080364 }
- %       \resumeItem{Teaching Assistant - Alogirithms \& Theory of Automata}
- %         {Helping students in their assignments and compilation of grade sheets. I had 150 students. }
- %     \resumeItemListEnd
-  \resumeSubHeadingListEnd
+
+% \resumeSubheading
+% {FAST-NU}{}
+% {Research Assistant}{Jan. 2015 - Dec. 2015}
+% \resumeItemListStart
+% \resumeItem{Research Assistant - Machine Learning}
+% {Research on machine learning for puzzle solving. Built a machine learning model with tensorflow and trained it on GPU. http://dx.doi.org/10.14569/IJACSA.2017.080364 }
+
+% \resumeItem{Teaching Assistant - Algorithms \& Theory of Automata}
+% {Helping students in their assignments and compilation of grade sheets. I had 150 students. }
+% \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 
 %-------------------
@@ -190,28 +282,35 @@ ranging from Power distributors to core switches.}
 \item
 {Engineer robust systems with minimalist design and clean code.}
 \item
+<<<<<<< Updated upstream
 {Hands-on expertise with Docker and Kubernetes for deployment of containerized apps on cloud:AWS, Azure,GCP and Heroku.}
+=======
+{Docker and Kubernetes for deployment of containerized apps on cloud: AWS, Azure,GCP and Heroku.}
+>>>>>>> Stashed changes
 \item
 {Developed Hadoop programs in Java and worked with Kafka, Zookeeper, Hive, Impala for reporting in HDFS.}
 \item{
 Experience with React and Angularjs}.
-\item{Lead a team of trainee engineers.
-}
-\item{
-Experience with Python and ML toolchain: Pandas, Numpy and Keras.
-}
 \item
+<<<<<<< Updated upstream
 {Distributed system design and programming in \bf{MPI, Nvidia CUDA and OpenMP}.}
+=======
+{Distributed system design and programming in MPI, Nvidia CUDA and OpenMP.}
+>>>>>>> Stashed changes
 \item{
 Practical knowledge of load balancers and HA.}
 \item{
-Knowledge of {\bf Hypervisors} and SDN with {\bf Openvswitch}.
+Hypervisors and SDN: Esxi, KVM, Openvswitch.
 }
 \item{
+<<<<<<< Updated upstream
 Experience with relational, NoSql and Time-series databases.
+=======
+Relational, NoSql and Time-series databases: Mysql, MSSQL, Mongodb, Influxdb, Elasticsearch.
+>>>>>>> Stashed changes
 }
 \item {
-	{Hands on with Java, Python, JavaScript and C++.}
+{Reporting tools: BIRT, JasperReports.}
 }
 \resumeSubHeadingListEnd
 
@@ -220,27 +319,35 @@ Experience with relational, NoSql and Time-series databases.
 
 %-----------PROJECTS-----------------
 \section{Other Projects}
+<<<<<<< Updated upstream
   \resumeSubHeadingListStart
       \resumeSubItem{Sokoban Solver}
   {Solving Sokoban puzzle(NP-complete problem) with machine learning. Designed a recurrent neural network and generated data using SAT solver.\href {http://thesai.org/Downloads/Volume8No3/Paper_64-Generation_of_Sokoban_Stages_using_Recurrent.pdf}{http://thesai.org}} 
 	\resumeSubItem{GRPC API}
 	{Todo-list GRPC API with Nodejs and Mongodb.}
+=======
+\resumeSubHeadingListStart
+\resumeSubItem{Sokoban Solver}
+{Solving sokoban puzzle(NP-Complete problem) with machine learning. Designed a recurrent neural network and generated input with SAT solver. \href {http://thesai.org/Downloads/Volume8No3/Paper_64-Generation_of_Sokoban_Stages_using_Recurrent.pdf}{http://thesai.org}} 
+\resumeSubItem{GRPC API}
+{Built a simple GRPC CRUD API with Nodejs and Mongodb.}
+>>>>>>> Stashed changes
 
-    \resumeSubItem{System programming}
-      {Built virtual machine cluster for MPI and bare metal distributed Hadoop cluster at HPC lab, FAST-NU.}
-  \resumeSubHeadingListEnd
+\resumeSubItem{Systems programming}
+{Built virtual machine cluster for MPI and bare metal distributed Hadoop cluster at HPC lab, FAST-NU.}
+\resumeSubHeadingListEnd
 
 %
 %--------PROGRAMMING SKILLS------------
 %\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
+% \resumeSubHeadingListStart
+% \item{
+% \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+% \hfill
+% \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+% }
+% \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
-\end{document}
+\end{document}\\
