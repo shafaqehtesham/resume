@@ -15,7 +15,7 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-
+%\usepackage{fontawesome}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -38,23 +38,23 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+\vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
+\item\small{
+	\textbf{#1}{: #2 \vspace{-2pt}}
+}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+\vspace{-1pt}\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{#1} & #2 \\
+	\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -67,101 +67,293 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CV STARTS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://github.com/saqibarfeen/}{\Large Muhammad Saqib Arfeen}} &  \tiny{\href{mailto:saqib.arfeen@gmail.com}{saqib.arfeen@gmail.com}}\\
-  \tiny{\href{https://github.com/saqibarfeen/}{https://github.com/saqibarfeen/}} & \tiny{+92-346-6311199} \\
-\tiny{\href{https://www.linkedin.com/in/mohamedsaqib/}{https://www.linkedin.com/in/mohamedsaqib/}}
+	\textbf{\href{https://www.linkedin.com/in/mohamedsaqib/}{\Large Saqib Arfeen}} & \tiny{\href{mailto:saqib.arfeen@gmail.com}{saqib.arfeen@gmail.com}},
+	\tiny{\href{https://github.com/saqibarfeen}{https://github.com/saqibarfeen}}, \tiny{+92 3466311199},
+	\tiny{\href{https://www.linkedin.com/in/mohamedsaqib}{https://www.linkedin.com/in/mohamedsaqib}}
 \end{tabular*}
 
-
+\vspace{15px}
 %-----------EDUCATION-----------------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {National University of Computer and Emerging Sciences - FAST}{Karachi, PK}
-      {Bachelor of Science in Computer Science;  GPA: 3.03/4.0}{Aug. 2012 -- Jun. 2016}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{National University of Computer and Emerging Sciences}{}
+{BS Computer Science, CGPA: 3.03/4.0}{2012 -- 2016}
+
+%\resumeSubheading
+%{Ayesha Bawany Govt. College}{2010 -- 2012}
+%{Pre-Engineering, 76\% marks}{}
+\resumeSubHeadingListEnd
+
 
 %--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
+\section{Technical Skills}
 \resumeSubHeadingListStart
+\itemsep0em 
 \item{
-	\textbf{Languages}{: Python, Java, C++, Javascript, SQL}
+	\textbf{Programming}{: Javascript, Python, PHP, C++, Java.}
 }
+%\item{
+% \textbf{Web development}{: HTML5, CSS.}
+%}
+\item{
+	\textbf{Web}{: Node.js, React, AngularJS, Django REST.}
+}
+\item{
+	\textbf{Libraries/Frameworks}{: Nvidia CUDA, Numpy, Pandas, SuiteScript.}
+}
+\item{
+	\textbf{Databases}{: MySQL, MongoDB, Elasticsearch, Graphite, HIVE.}
+}
+\item{
+	\textbf{Data visualization}{: Grafana, BIRT, Jasper Reports.}
+}
+%\item{
+% \textbf{Database/Application server}{: Mongodb, HIVE, Impala, MySQL, Oracle, MS SQL Server, Influxdb, Tomcat, Apache, Jboss.}
+% }
+\item{
+	\textbf{Network monitoring}{: Elasticsearch, Nagios, Prometheus, Icinga, Splunk.}
+}
+%\item {
+%	\textbf{Automation}{: Puppet, SaltStack.}
+%}
+
+\item{
+	\textbf{Cloud} {: Openstack, AWS, GCP, Docker, Kubernetes, Netsuite ERP.}
+}
+%\item{
+%	\textbf{ERP}{: Netsuite.}
+%}
 \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%--------PROGRAMMING SKILLS------------
+%\section{Coursework}
+%\resumeSubHeadingListStart
+%\item{
+%{Artificial Intelligence},
+%\hfill
+%%{Machine Learning},
+%\hfill
+%{High Performance Computing},
+%\hfill
+%{Computer Graphics},
+%\hfill
+%{Neural Networks.}
+
+%}
+%\resumeSubHeadingListEnd
+
+
+
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%\resumeSubHeadingListStart
+%\item{
+%	\textbf{Languages}{: Python, Java, C++, Javascript, SQL}
+%}
+%\resumeSubHeadingListEnd
 
 
 %-------------------------------------------
 
 %--------PROGRAMMING SKILLS------------
-\section{Coursework}
-\resumeSubHeadingListStart
-\item{
-	{Artificial Intelligence},
-	\hfill
-	{Machine Learning},
-		\hfill
-	{High Performance Computing},
-		\hfill
-	{Computer Graphics},
-	\hfill
-	{Neural Networks.}
+%\section{Coursework}
+%\resumeSubHeadingListStart
+%\item{
+%	{Artificial Intelligence},
+%	\hfill
+%	{Machine Learning},
+%		\hfill
+%	{High Performance Computing},
+%		\hfill
+%	{Computer Graphics},
+%	\hfill
+%	{Neural Networks.}
 
-}
-\resumeSubHeadingListEnd
+%}
+%\resumeSubHeadingListEnd
 
 
 %-------------------------------------------
 
 %-----------EXPERIENCE-----------------
-\section{Experience}
-  \resumeSubHeadingListStart
+\section{Work Experience}
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Cloud9networks FZE}{Karachi,PK}
-      {Software Engineer}{Jul 2016 - Present}
-      \resumeItemListStart
-        \resumeItem{Trace9}
-          {It is a software system that monitors thousands of customer premises network devices, typically for an ISP. It collects and stores metrics, and graphs and charts are built for trending data, with alerting and ticketing.}
-        \resumeItem{Observer9}
-         {It is a monitoring system for Openstack cloud. It works in distributed mode and collects, parses and aggregates log data and system metrics from Openstack cloud nodes. It has data visualizations using Grafana and Kibana.}
-      \resumeItemListEnd
+\resumeSubheading
+{Folio3 Software}{}
+{Sr. Software Engineer}{December 2019 - present}
+\resumeItemListStart
+\resumeItem{Netsuite ERP Customization}
+{Business process customization solutions with Suitescript and React.}
+\resumeItem{ERP Connector}
+{Development of a product that integrates Netsuite to various ERP and Ecommerce systems.}
+%\resumeItem{Teaching Assistant - Algorithms, Theory of Automata}
+%{Helping students in their assignments and projects for a class of 150 students.}
+\resumeItemListEnd
+\resumeSubheading
+{Ivolve Technologies}{}
+{Sr. Software Engineer}{Jul 2019 - Nov 2019}
+\resumeItemListStart
+\resumeItem{Microservices applications}
+{Built microservices with Django REST and Nodejs. Designing the UX of the web application. Solving critical business problems with Python. Interfacing different services with Rabbitmq.}
+\resumeItem{Monitoring system}
+{Built a monitoring data pipeline for the microservices and the cloud infrastructure with tools like Ceilometer, Gnocchi, Elasticsearch, Graphite and Grafana.}
 
-  
+%\resumeItem{Teaching Assistant - Algorithms, Theory of Automata}
+%{Helping students in their assignments and projects for a class of 150 students.}
+\resumeItemListEnd
 
-    \resumeSubheading
-      {National University of Computer and Emerging Scinces - FAST}{Karachi, PK}
-      {Research and Teaching Assistant}{Jan 2015 - Dec 2015}
-      \resumeItemListStart
-        \resumeItem{Research Assistant - Machine Learning}
-          {Research on machine learning for puzzle solving. Coded a prototype in python and trained it with keras and tensorflow on gpu. http://dx.doi.org/10.14569/IJACSA.2017.080364 }
-        \resumeItem{Teaching Assistant - Theory of Automata, Introduction to Algorithms}
-          {Grading of class assignments and compilation of final grade sheets.The class strength was 150 and 100 students respectively. }
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\resumeSubheading
+{Cloud9 Networks FZE}{}
+{Sr. Software engineer}{Jul 2016 - Jun 2019}
+\resumeItemListStart
+\resumeItem{Cloud Monitoring Software}
+{
+	\begin{itemize}
+		\item {Developed a logging, monitoring and alerting system for Openstack cloud.}
+		%\item {Development of the proposed design that included Lua plugins for Heka(github.com/mozilla/heka) and python plugins for collectd for collection and processing. Elasticsearch, Logstash and Influxdb for data storage and retrieval and Kibana visualizations.}
+		\item {Developed telemetry and metering system for Openstack cloud.}
+		%\item {Built puppet modules and manifests for automated deployment.}
+	\end{itemize} 
+}
+\resumeItem{Network Monitoring System}
+{
+	\begin{itemize}
+		\item {Development and integration of Network monitoring system that monitors thousands of customer premises equipment: collects and stores metrics and visualizes data with alerting and ticketing systems integrated.}
+		%\item {Elasticsearch, Logstash and Kibana for storage/retrieval, parsing, and visualization of syslog data from devices ranging from PDUs to core switches.}
+		%\item {Supporting deployment engineer and troubleshooting problems in production.}
+		
+	\end{itemize}
+}
+\resumeItem{Big Data Analytics Engine}
+{
+	\begin{itemize}
+		\item {Developed a REST API in Java Spring and frontend in AngularJS.}
+		\item {Designed and deployed a Hadoop cluster for data streaming pipeline from relational data sources to HIVE.}
+		\item {Created Oozie jobs for executing HIVE scripts.}
+		
+	\end{itemize}
+}
+\resumeItem{\href{https://github.com/pndaproject/}{PNDA Project}}
+{
+	\begin{itemize}
+		\item {Deployed PNDA Big data network analytics toolchain on Openstack cloud. https://github.com/pndaproject/}
+		%\item {Troubleshooting of various SaltStack scripts and declarative states in the deployment process.}
+		%\item {Providing support to various users of the opensource tool with problems in Openstack platform.}
+	\end{itemize}
+}
+\resumeItem{KPK College Students' Internet Access System}
+{
+	\begin{itemize}
+		\item {Lead the analysis, design and implementation of a product that is used by hundreds of college students for accessing internet. Used cutting edge tools for rapid application development while maintaining quality.}
+	\end{itemize}
+}
 
+
+\resumeItemListEnd
+
+
+%\resumeSubheading
+%{FAST-NUCES}{Karachi}
+%{Internee-Web developer and system engineer}{July 2016 - Present}
+%\resumeItemListStart
+%\resumeItem{Cloud Monitoring Software}
+%{%
+% \begin{itemize}
+%\item {asdas} 
+% \end{itemize}
+%}
+%\resumeItemListEnd
+
+\resumeSubheading
+{FAST-NUCES}{}
+{Research Assistant}{Jan. 2015 - June. 2016}
+\resumeItemListStart
+\resumeItem{Research Assistant - Machine Learning}
+{Research on puzzle solving using various data oriented techniques. Applied deep learning on data generated from Copris Theorem Prover. \href{http://dx.doi.org/10.14569/IJACSA.2017.080364}{http://dx.doi.org/10.14569/IJACSA.2017.080364 }}
+\resumeItem{System engineer - Nvidia HPC lab}
+{Built Message Passing Interface(MPI) cluster for distributed memory programming and Hadoop cluster for map-reduce programming for HPC class of fall-2015.}
+
+%\resumeItem{Teaching Assistant - Algorithms, Theory of Automata}
+%{Helping students in their assignments and projects for a class of 150 students.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-------------------
+
+
+%-----------SKILLS-----------------
+%\section{Skills}
+%\resumeSubHeadingListStart
+%\item
+%{Expertise in Linux, Docker and Kubernetes for deployment of containerized apps on cloud: AWS, Azure, GCP and Heroku.}
+%\item
+%{Map-reduce programming in Java and worked with Kafka, Zookeeper, Hive, Impala for data steaming and reporting.}
+%\item{
+%Experience with React and Angularjs}.
+%\item
+%{Distributed system design and programming in MPI, Nvidia CUDA and OpenMP.}
+%\item{
+%Practical knowledge of load balancers and HA.}
+%\item{
+%Hypervisors and SDN: Esxi, KVM, Openvswitch.
+%}
+%\item{
+%Relational, NoSql and Time-series databases: Mysql, MSSQL, Mongodb, Influxdb, Elasticsearch.
+%}
+%\item {
+%{Reporting tools: BIRT, JasperReports.}
+%}
+%\item {
+%{Automation: Puppet, Ansible, SaltStack.}
+%}
+%\resumeSubHeadingListEnd
+
+
+%----------------------------------
 
 %-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Data Engine}
-      {Data analytics solution capable of streaming data from various sources and store and analyze it in HDFS, using Java Spring, JSP with Angularjs.}
-    \resumeSubItem{Openstack cloud monitoring}
-      {Created a logging monitoring and alerting solution that parses, transforms and aggregates ingested log data with Logstash and Heka and then indexes it in Elasticsearch.
-      }
-    \resumeSubItem{Sokoban Solver}
-      {A puzzle solver with machine learning. Designed a recurrent neural network and python scripts that generated training data  using a SAT solver. 
-      }
-    \resumeSubItem{Big data clusters}
-      {Created virtual machine  and bare-metal clusters for MPI and Hadoop mapreduce in HPC lab.}
-  \resumeSubHeadingListEnd
+%\section{Other Projects}
+%\resumeSubHeadingListStart
+%\resumeSubItem{Sokoban Solver}
+%{Solving sokoban puzzle(NP-complete problem) with machine learning. Designed a recurrent neural network and generated input with SAT solver. \href %{http://thesai.org/Downloads/Volume8No3/Paper_64-Generation_of_Sokoban_Stages_using_Recurrent.pdf}{http://thesai.org}} 
+%\resumeSubItem{GRPC API}
+%{Built a simple GRPC CRUD API with Node.js and Mongodb.}
+
+%\resumeSubItem{Systems programming}
+%{Built virtual machine cluster for MPI and bare metal distributed Hadoop cluster at HPC lab, FAST-NU.}
+%\resumeSubHeadingListEnd
+
+%\section{References}
+%\resumeSubHeadingListStart
+%\item
+%{Vishal Kumar: Sr. Software engineer - Folio3.}
+%\resumeSubHeadingListEnd
+
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+% \resumeSubHeadingListStart
+% \item{
+% \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+% \hfill
+% \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+% }
+% \resumeSubHeadingListEnd
+%-------------------------------------------
 
 
 
-\end{document}
+
+\end{document}\\
